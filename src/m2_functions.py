@@ -76,7 +76,7 @@ def theta_xi(color, thickness):
     paul.pen = rg.Pen(color, 5)
     hal.forward(100)
     paul.backward(100)
-
+    window.close_on_mouse_click()
 # TODOne: 4b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
