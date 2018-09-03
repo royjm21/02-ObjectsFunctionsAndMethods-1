@@ -19,6 +19,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 ###############################################################################
 
 import rosegraphics as rg
+import math
 
 
 def main():
@@ -26,19 +27,24 @@ def main():
     TESTS the functions that you will write below.
     You write the tests per the _TODO_s below.
     """
-
+    print(triangle(3, 4))
+    print(theta_xi('silver', 10))
 
 ###############################################################################
 #
-# TODO: 3a.  Define a function immediately blow this _TODO_.
+# TODOne: 3a.  Define a function immediately blow this _TODO_.
 #   It takes two arguments that denote, for a right triangle,
 #   the lengths of the two sides adjacent to its right angle,
 #   and it returns the length of the hypotenuse of that triangle.
 #     HINT: Apply the Pythagorean theorem.
 #
 #   You may name the function and its parameters whatever you wish.
-#
-# TODO: 3b.  In main, CALL your function and print the returned value,
+
+
+def triangle(a, b):
+    return math.sqrt((a**2)+(b**2))
+
+# TODOne: 3b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
@@ -46,7 +52,7 @@ def main():
 
 ###############################################################################
 #
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# TODOne: 4a.  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
@@ -61,8 +67,17 @@ def main():
 #        makes the other SimpleTurtle move BACKWARD 100 pixels.
 #
 #   You may name the function and its parameters whatever you wish.
-#
-# TODO: 4b.  In main, CALL your function and print the returned value,
+def theta_xi(color, thickness):
+    window = rg.TurtleWindow()
+    window.delay(20)
+    hal = rg.SimpleTurtle()
+    hal.pen = rg.Pen('green', thickness)
+    paul = rg.SimpleTurtle()
+    paul.pen = rg.Pen(color, 5)
+    hal.forward(100)
+    paul.backward(100)
+
+# TODOne: 4b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
@@ -70,7 +85,7 @@ def main():
 
 ###############################################################################
 #
-# TODO: 5.
+# TODOne: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
