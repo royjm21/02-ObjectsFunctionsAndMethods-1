@@ -181,9 +181,18 @@ def try_methods():
       -- backward  100 units
     """
     ###########################################################################
-    # TODO: 3. Implement and test this function, per its doc-string above.
+    # TODOne: 3. Implement and test this function, per its doc-string above.
     #     (To test it, put a statement in   main   that calls this function.)
     ###########################################################################
+    window = rg.TurtleWindow()
+    window.delay(30)
+    katelyn = rg.SimpleTurtle()
+    katelyn.pen = rg.Pen('brown', 5)
+    katelyn.forward(150)
+    katelyn.left(90)
+    katelyn.forward(50)
+    katelyn.backward(100)
+    window.close_on_mouse_click()
 
 
 def try_functions():

@@ -21,6 +21,9 @@ def main():
     # -------------------------------------------------------------------------
     draw_circles(rg.Point(100, 50))
     draw_circles(rg.Point(-200, 0))
+    better_draw_circles(rg.Point(100, 100))
+    better_draw_circles(rg.Point(75, 125))
+    even_better_draw_circles()
 
     window.update()
     window.close_on_mouse_click()
@@ -88,7 +91,7 @@ def draw_circles(point):
 
 ###############################################################################
 #
-# TODO: 3a.
+# TODOne: 3a.
 #   The function
 #       better_draw_circles
 #   defined below this _TODO_ starts out exactly the same as the code for
@@ -111,7 +114,7 @@ def draw_circles(point):
 #   just as in   draw_circles.  But if that parameter is given the value 3,
 #   then the circles should have radii:  3  6  9  12  15  18 ..., respectively.
 #
-# TODO: 3b.
+# TODOne: 3b.
 #   In   main  at the place indicated, comment-out the two existing calls
 #   to  draw_circles  and add at least two calls to the improved
 #   better_draw_circles  function, to TEST that your modified code is correct
